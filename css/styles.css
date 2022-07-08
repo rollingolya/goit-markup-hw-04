@@ -1,0 +1,633 @@
+:rootstyle {
+    /* text colors */
+--main-font: 'Roboto';
+--secondary-font: 'Raleway';
+    /* bg-colors */
+
+    /* other */
+--items: 4;
+--indent: 30px;
+}
+
+body { 
+font-family: var(--main-font), sans-serif;
+font-family: 'Roboto', 'Raleway', sans-serif;}
+
+/* Сітка із застосуванням flex-box */
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    margin: -15px;
+    }
+    
+.card-set-item {
+    flex-basis: calc(100% - ((var(--items)-1) * var(--indent)) / var(--items));
+    margin: 15px;
+    }
+
+/* reset */
+h1, h2, h4, h5, h6, p, ul {
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+h3 {margin-top: 0;   
+    margin-bottom: 10px;}
+
+/* common styles start */
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* common styles start */
+
+.list {
+    list-style: none;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* header section */
+
+.header-page {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.menu-nav-list {
+display: flex;
+align-items: center;
+margin-left: 93px;
+}
+
+.header-container {
+display: flex;
+align-items: center;
+}
+
+.nav-link{
+margin-right: 50px;
+}
+
+.menu-nav-list .nav-link:last-child {
+margin-right: 0;
+}
+
+
+.header-page a {
+text-decoration: none;
+}
+
+.logo {color: #2196F3;
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+
+padding-top: 25px;
+padding-bottom: 25px;
+}
+
+.studio {color: #212121}
+
+.first-nav {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;}
+
+.scnd-nav { color: #212121;
+
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;}
+
+.thrd-nav { color: #212121;
+
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;}
+
+.current-link { color: #2196F3;}
+
+.item-nav {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.link-mail {color: #757575;
+
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+
+.mail-main:hover,
+.mail-main:focus {color: #2196F3;}
+
+.tel-hd {color: rgba(117, 117, 117, 1);
+
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+margin-left: 50px;}
+
+.contact-nav {
+margin-left: auto;}
+
+/* Секция hero */
+
+.hero {
+padding-top: 200px;
+padding-bottom: 200px;
+
+background-color: rgba(47, 48, 58, 1); 
+text-align: center;
+}
+
+.contact-nav {font-style: normal;
+line-height: 1.71;}
+
+h1 {
+width: 696px;
+margin-right: auto;
+margin-left:auto;
+    
+color: rgba(255, 255, 255, 1);
+    
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+    
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+margin-bottom: 30px;}
+
+.text-button {color: rgba(255, 255, 255, 1);
+font: var(--main-font);
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
+
+cursor: pointer; 
+background-color: rgba(33, 150, 243, 1);
+justify-content: space-around;
+
+display: inline-block;
+border-radius: 4px;
+border-color: transparent;
+padding: 10px 32px;
+}
+
+.text-button:hover,
+.text-button:focus {
+background: #188CE8; }
+
+/* Секция property */
+
+.list-property {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    margin: -15px;
+    }
+    
+    .element-property {
+    width: 270px;
+    flex-basis: calc(100% - ((var(--items)-1) * var(--indent)) / var(--items));
+    margin: 15px;
+    }
+
+.attention-detail {
+color: rgba(33, 33, 33, 1); 
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+}
+
+.punctuality {color: rgba(33, 33, 33, 1);
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;}
+
+.planning {color: rgba(33, 33, 33, 1);
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;}
+
+.tech {color: rgba(33, 33, 33, 1);
+
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;}
+
+.idea-considerations {color: rgba(117, 117, 117, 1);
+
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+
+letter-spacing: 0.03em;}
+
+.task-company{color: rgba(117, 117, 117, 1);
+
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+
+letter-spacing: 0.03em;}
+
+.consult{color: rgba(117, 117, 117, 1);
+
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+
+letter-spacing: 0.03em;}
+
+.significance-problem {color: rgba(117, 117, 117, 1);
+
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+
+letter-spacing: 0.03em;}
+
+/* Секція Чем мы занимаемся */
+
+.team-section {
+padding-top: 0;
+}
+
+.what-we-do {color: rgba(33, 33, 33, 1);
+    
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+
+margin-bottom: 50px;
+}
+
+.pict-first {
+    
+background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
+mix-blend-mode: normal; }
+
+.pict-scnd {
+
+background: url(web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg);
+}
+
+.pict-thrd {
+
+background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
+}
+
+.img-what-do {
+display: flex;
+padding: 0;
+}
+
+.pic-what-do {
+flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
+margin-right: 30px;
+}
+
+.pic-what-do:last-child {
+margin-right: 0;
+}
+
+/* Секція Наша команда */
+
+.team {
+    margin-bottom: 50px;
+}
+
+.sect-team {background-color: rgba(245, 244, 250, 1);}
+
+.team {color: #212121; 
+    
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;} 
+
+.wrap {
+background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+width: 270px;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+.team-list {
+display: flex;
+padding-left: 0;
+margin-right: 30px;
+}
+
+.team-icon {
+margin-right: 30px;
+}
+
+.team-icon:last-child {
+margin-right: 0;
+}
+
+.employee-first {
+background: url(4853.jpg);
+border-radius: 0px;}
+
+.name-ihor {color: rgba(33, 33, 33, 1);
+
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+
+text-align: center;
+letter-spacing: 0.03em;}
+
+.designer{color: rgba(117, 117, 117, 1);
+    
+font-weight: 400;
+font-size: 16px;
+line-height: 1.19;
+    
+text-align: center;
+letter-spacing: 0.03em;}
+
+.employee-scnd {
+background: url(5844.jpg);
+border-radius: 0px;}
+
+.name-olha{color: rgba(33, 33, 33, 1);
+        
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+        
+text-align: center;
+letter-spacing: 0.03em;}
+
+.developer{color: rgba(117, 117, 117, 1);
+        
+font-weight: 400;
+font-size: 16px;
+line-height: 1.19;
+        
+text-align: center;
+letter-spacing: 0.03em;}
+
+.employee-thrd {
+background: url(16166.jpg);
+border-radius: 0px;}
+
+.name-nick {color: rgba(33, 33, 33, 1);
+        
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+        
+text-align: center;
+letter-spacing: 0.03em;}
+        
+.marketing{color: rgba(117, 117, 117, 1);
+        
+font-weight: 400;
+font-size: 16px;
+line-height: 1.19;
+        
+text-align: center;
+letter-spacing: 0.03em;}
+
+.employee-fourth {    
+background: url(2968.jpg);
+border-radius: 0px;}
+
+.name-michael {color: rgba(33, 33, 33, 1);
+
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+
+text-align: center;
+letter-spacing: 0.03em;}
+
+.ui-Designer {color: rgba(117, 117, 117, 1);
+
+font-weight: 400;
+font-size: 16px;
+line-height: 1.19;
+
+text-align: center;
+letter-spacing: 0.03em;}
+
+.footer-back a {
+text-decoration: none;
+line-height: 1.71;}
+
+.logo-footer {color: #2196F3;
+
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+
+letter-spacing: 0.03em;
+
+display: inline-block;
+margin-bottom: 20px;}
+
+.ftr-list {
+padding-left: 0;
+}
+
+.studio-white {color: white;} 
+
+.link-adr-ftr {
+color: rgba(255, 255, 255, 1);
+font-weight: 400;
+font-size: 14px;
+letter-spacing: 0.03em;
+
+display: inline-block;
+margin-bottom: 9px;}
+
+.link-mail-ftr {
+color: rgba(255, 255, 255, 0.6);
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+
+display: inline-block;
+margin-bottom: 9px;}
+
+.link-ph-ftr {color: rgba(255, 255, 255, 0.6);
+
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+
+letter-spacing: 0.03em;}
+
+.footer-back {
+background-color: rgba(47, 48, 58, 1);
+padding-top: 60px;
+padding-bottom: 60px;
+}
+
+/* Portfolio page */
+
+ul {list-style: none;}
+
+/* Секція header */
+
+.first-nav-port { color: #212121;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;}
+
+.scnd-nav-port {color: #2196F3;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+
+.thrd-nav-port {color: #212121;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+
+/* Фильтр портфолио */
+
+.button-text {
+font: var(--main-font); 
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+
+letter-spacing: 0.03em;
+
+color: #212121;
+background: #F5F4FA;
+cursor: pointer; 
+
+display: inline-block;
+border-radius: 4px;
+border-color: transparent;
+height: 38px;
+padding: 6px 22px;
+justify-content: space-between; 
+margin-right: 8px;
+}
+
+.btn-mrktng {
+margin-right: 0px;
+} 
+
+
+.button-text:hover,
+.button-text:focus {
+color: #FFFFFF; 
+background: #2196F3; 
+}
+
+.btn-all {
+min-width: 73px;
+}
+
+.btn-web {
+min-width: 128px;
+}
+
+.btn-apps {
+min-width: 145px;
+}
+
+.btn-dsgn {
+min-width: 103px;
+}
+
+.btn-mrktng {
+min-width: 130px;
+}
+
+
+.button-list {
+margin-bottom: 50px;
+display: flex;
+justify-content: center;
+}
+
+/* Service gallery */
+
+.all-services {
+--items: 3;
+}
+
+.name-service {font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+    
+color: #212121;
+}
+
+.type-service { font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+} 
+
+.wrap-border {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-top: transparent;
+    width: 370px;
+    padding: 20px 24px;
+}
