@@ -401,6 +401,10 @@ margin-right: 30px;
 margin-right: 0;
 }
 
+.team-position {
+margin-bottom: 16px;
+}
+
 .employee-first {
 background: url(4853.jpg);
 border-radius: 0px;}
@@ -488,6 +492,40 @@ line-height: 1.19;
 
 text-align: center;
 letter-spacing: 0.03em;}
+
+/* Оформлення іконок */
+
+.social-media-list {
+display: flex;
+justify-content: center;
+padding-left: 0;
+
+}
+
+.social-media-link {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 44px;
+width: 44px;
+
+background-color: #FFFFFF;
+border-radius: 50%;
+
+fill: rgba(175, 177, 184, 1);
+
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+fill: rgba(255, 255, 255, 1);
+background-color: #2196F3;
+} 
+
+.social-media-list .social-media-item + .social-media-item {
+margin-left: 10px;
+}
+
 
 .footer-back a {
 text-decoration: none;
