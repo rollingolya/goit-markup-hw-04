@@ -2,7 +2,9 @@
     /* text colors */
 --main-font: 'Roboto';
 --secondary-font: 'Raleway';
-    /* bg-colors */
+    /* colors */
+--primary-color: rgba(33, 33, 33, 1);
+--accent-color: rgba(33, 150, 243, 1);
 
     /* other */
 --items: 4;
@@ -134,25 +136,17 @@ letter-spacing: 0.02em;}
     padding-bottom: 32px;
 }
 
-.link-mail {color: #757575;
+.link-mail {
+padding-top: 32px;
+padding-bottom: 32px;  
 
+color: #757575;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 }
 
-.contact-nav > .link-mail::before {
-content: '';
-display: inline-block;
-align-items: center;
-margin-right: 10px;
-width: 16px;
-height: 12px;
-background-image: url(../images/svg/mail.svg);
-background-size: contain;
-
-}
 
 .mail-main:hover,
 .mail-main:focus {color: #2196F3;}
@@ -169,6 +163,22 @@ margin-left: 50px;}
 
 .contact-nav {
 margin-left: auto;}
+
+/* Оформлення іконок пошти і телефону */
+
+.contact-icon {
+margin-right: 10px;
+
+fill: #757575;;
+}
+
+.mail-icon:hover,
+.mail-icon:focus {
+fill: #2196F3;
+}
+
+
+
 
 /* Секция hero */
 
@@ -526,6 +536,57 @@ background-color: #2196F3;
 margin-left: 10px;
 }
 
+/* Секція Постоянные клиенты */
+
+.clients {
+margin-bottom: 50px;
+
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+
+}
+
+/* Оформлення логотипів постійних клієнтів */
+
+.client-list {
+    display: flex;
+    justify-content: center;
+    justify-content: center; 
+    padding: 0;
+}
+
+
+.client-link {
+     display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+}
+
+.client-item {
+background-color: #FFFFFF;
+min-width: 170px;
+min-height: 92px;
+}
+
+.client-item + .client-item {
+margin-left: 30px;
+}
+
+.client-link:hover,
+.client-link:focus {
+fill: rgba(33, 150, 243, 1);
+border-color: rgba(33, 150, 243, 1);
+}
+
+/* Секция Footer bg */
 
 .footer-back a {
 text-decoration: none;
