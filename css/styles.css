@@ -144,7 +144,7 @@ letter-spacing: 0.02em;}
     display: flex;
 }
 
-.link-mail {
+.contact-link {
 padding-top: 32px;
 padding-bottom: 32px;  
 
@@ -178,22 +178,15 @@ margin-left: auto;}
 .contact-icon {
 margin-right: 10px;
 
-fill: #757575;;
+fill: #757575;
+fill: currentColor;
 }
-
-
-.contact-icon:hover,
-.contact-icon:focus {
-    fill: inherit;
-}
-
 
 .contact-link:focus,
 .contact-link:hover {
     fill: #2196F3;
     color: #2196F3;
 }
-
 
 /* Секция hero */
 
