@@ -342,7 +342,6 @@ margin-bottom: 30px;
 
     background: #F5F4FA;
     border-radius: 4px;
-
 }
 
 /* Секція Чем мы занимаемся */
@@ -588,6 +587,10 @@ letter-spacing: 0.03em;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 
+}
+
+.client-icon {
+    
 }
 
 .client-item {
